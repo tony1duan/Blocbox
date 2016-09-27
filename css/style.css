@@ -2,10 +2,10 @@ html, body {
         overflow-x:hidden;
     }
 body {
-    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 h2 {
     font-size: 28px;
@@ -15,7 +15,7 @@ h2 {
 p {
     font-size: 16px;
     line-height: 19px;
-    font-wieght: 100;
+    font-weight: 300;
 }
 
 /* GRID */
@@ -68,40 +68,69 @@ p {
     }
 }
 
- /* HEADER */
- header {
+/* HEADER */
+header {
      color:#FFFFFF;
      height: 100vh;
      background-image: url(../img/dashboard-background.jpg);
      background-size: cover;
      background-repeat: no-repeat; 
 }
- header nav {
+header nav {
    padding:1em 0;
- }
- header nav ul {
+}
+header nav ul {
    display:inline;
    text-align: right;
    float:right;
    margin:0;
- }
- header nav ul > li {
+}
+header nav ul > li {
    list-style-type: none;
    display: inline-block;
    margin:0 15px;
- }
- header nav ul > li.btn-outline {
+}
+header nav ul > li.btn-outline {
    padding:10px 15px;
    border:2px solid #FFFFFF;
    border-radius: 4px;
- }
- header nav ul > li.btn-outline:hover {
+}
+header nav ul > li.btn-outline:hover {
    background:#FFFFFF;
- }
- header nav ul > li > a {
+}
+header nav ul > li > a {
    color:#FFFFFF;
    text-decoration: none;
- }
- header nav ul > li.btn-outline:hover > a {
+}
+header nav ul > li.btn-outline:hover > a {
    color:#34495E;
- }
+}
+
+header .hero {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+header .hero h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin: 95px 0 0;
+}
+header .hero p {
+    font-size: 44px;
+    line-height: 51px;
+    font-weight: 300;
+    margin: 10px 0 40px;
+}
+
+/* BUTTONS */
+.btn {
+    border-radius:4px;
+    color:#2880bf;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #ffd36d;
+    border: 2px solid #ffd36d;
+    box-shadow: 1px 2px 0px 0px #9b9b9b;
+}
