@@ -1,6 +1,6 @@
 html, body {
         overflow-x:hidden;
-}
+    }
 body {
     font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
@@ -71,10 +71,14 @@ p {
  /* HEADER */
  header {
    color:#FFFFFF;
-   /*background: #34495E;
-   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+     height: 100vh;
+     border: solid red;
+     /*background: #34495E;
+     background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%); 
      */
-    
+     background-image: url(../img/dashboard-gradient.jpg);
+     background-size: cover;
+     background-repeat: no-repeat; 
 
 }
  header nav {
@@ -113,8 +117,8 @@ p {
     background-image: linear-gradient(-167deg, #F8FCFF 8%, #497EA8 84%);
 }
 */
-.background: url("img/dashboard.png") no-repeat center center fixed; 
+/*.background: url("img/dashboard.png") no-repeat center center fixed; 
   -webkit-background-size: cover
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
