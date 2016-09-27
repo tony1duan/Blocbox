@@ -70,16 +70,11 @@ p {
 
  /* HEADER */
  header {
-   color:#FFFFFF;
+     color:#FFFFFF;
      height: 100vh;
-     border: solid red;
-     /*background: #34495E;
-     background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%); 
-     */
-     background-image: url(../img/dashboard-gradient.jpg);
+     background-image: url(../img/dashboard-background.jpg);
      background-size: cover;
      background-repeat: no-repeat; 
-
 }
  header nav {
    padding:1em 0;
@@ -110,15 +105,3 @@ p {
  header nav ul > li.btn-outline:hover > a {
    color:#34495E;
  }
-/*.background {
-    background-image: url("img/dashboard.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(-167deg, #F8FCFF 8%, #497EA8 84%);
-}
-*/
-/*.background: url("img/dashboard.png") no-repeat center center fixed; 
-  -webkit-background-size: cover
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
