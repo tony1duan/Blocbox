@@ -59,12 +59,17 @@ p {
         width:29.33333%
     }
     .one-fourth {
-        width:21%
+        width:21%;
     }
 }
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+}
+@media (min-width: 1900px) {
+    .container {
+        width: 1840;
     }
 }
 
@@ -114,13 +119,13 @@ header .hero {
 header .hero h1{
     font-size: 60px;
     font-weight: 900;
-    margin: 95px 0 0;
+    margin: 95px 0 40;
 }
 header .hero p {
     font-size: 44px;
     line-height: 51px;
     font-weight: 300;
-    margin: 10px 0 40px;
+    margin: 10px 0 80px;
 }
 
 /* BUTTONS */
