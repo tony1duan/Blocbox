@@ -304,18 +304,18 @@ header .hero p {
 /* TESTIMONIALS----------------------------------------------------------------------------------- */
 
 .item_top {
-    position: absolute;
+    position: relative;
+    top: 130px;
     left:15px;
     right:15px;
     text-align: center;
-    border: 6px solid green;
 }
 .item_top2 {
-    position:absolute;
+    position:relative;
+    top: 130px;
     left:15px;
     right:15px;
     text-align: center;
-    border: 5px solid red;
     
 }
 .container_full {
@@ -327,6 +327,7 @@ header .hero p {
     margin: 30px 90px;
 }
 .user1, .user2, .user3 {
+    top:-100px;
     z-index: -1;
 }
 .user1 {
@@ -375,53 +376,76 @@ header .hero p {
 }
 
 /* FOOTER----------------------------------------------------------------------------------- */
- footer {
-   background-color: #34495E;
-   background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
-   color: #FFFFFF;
-   height: 150px;
-   position: relative;
-   overflow: hidden;
-   z-index: 0;
+footer {
+    background-color: #8BBDE5;
+    background-image: linear-gradient(to bottom right, #6EA6D4 0%, #9ECFF5 100%);
+    color: #FFFFFF;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
  }
- footer p, footer nav ul {
-   font-size:14px;
-   font-weight:100;
-   text-align: center;
-   margin: 10px auto 0;
+footer p, footer nav ul {
+    font-size:11px;
+    font-weight:100;
+    text-align: center;
+    margin: 10px auto 0;
  }
- footer nav ul li {
-   list-style-type: none;
-   display: inline;
+footer nav ul li {
+    list-style-type: none;
+    display: inline;
  }
- footer nav ul li a {
-   color:#FFFFFF;
-   text-decoration: none;
+footer nav ul li a {
+    color:#FFFFFF;
+    text-decoration: none;
  }
- footer .right-footer-block {
-   background-color: transparent;
+footer .right-footer-block {
+    background-color: transparent; 
  }
- footer .logo{
-   padding: 2.35em 0;
-   margin: 0 auto;
-   display: block;
+footer .logo{
+    padding: 2.35em 0;
+    margin: 0 auto;
+    display: block;
+    height: 93px;
+}
 
 @media (min-width: 992px){
-   footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-     height: 100px;
-   }
-   footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: center;
-   }
-   footer .right-footer-block {
-     background-color: #3498DB;
-   }
-   footer .logo{
-     padding: 0 0 2em 0;
-   }
+    footer{
+        background-color: #8BBDE5;
+        background-image: linear-gradient(to bottom right, #6EA6D4 0%, #9ECFF5 100%);
+        height: 100px;
+    }
+    footer p, footer nav ul{
+        padding: 3em 0;
+        text-align: left;
+    }
+
+    footer .logo{
+        padding: 0 0 2em 0;
+    }
+}
+
+@media (min-width: 768px){
+    footer{
+        background-color: #8BBDE5;
+        background-image: linear-gradient(to bottom right, #6EA6D4 0%, #9ECFF5 100%);
+        height: 100px;
+    }
+    footer p, footer nav ul{
+        padding: 3em 0;
+        text-align: left;
+    }
+
+    footer .logo{
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer p, footer nav ul {
+        font-size:14px;
+        font-weight:100;
+        text-align: center;
+        margin: 10px auto 0;
  }
+}
