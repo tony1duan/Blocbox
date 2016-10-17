@@ -460,7 +460,7 @@ footer .logo{
     height:100vh;   /* 100/100 vertical height */
     width: 14.6666667%;
     color: #FFFFFF;
-    background: #9ECFF5;
+    background: #6EA6D4;
     background-image: linear-gradient (-135deg, #6EA6D4 0%, #9ECFF5 100%);
     box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.50);
     float: left;
@@ -477,7 +477,7 @@ footer .logo{
     padding: 0 6%;
 }
 .left-nav .items p {
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
     font-size: 12px;
     color: #FFFFFF;
@@ -494,7 +494,7 @@ footer .logo{
 .left-nav .items ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 300;
 }
 .left-nav .items ul li a i {
     width:16px;
@@ -532,7 +532,7 @@ footer .logo{
     display: inline-block;
     vertical-align: top;
     padding-top: 8px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0 0 0 10px;
 }
 .left-nav .settings a {
@@ -556,7 +556,7 @@ footer .logo{
 }
 .content .header h1 {
     font-family: 'Raleway',Helvetica, Arial, sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0 0 30px;
     font-size: 36px;
     color: #2398DB;
@@ -576,6 +576,7 @@ footer .logo{
 .item-box {
     display:block;
     height:230px;
+    background: #FFFFFF;
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
     position: relative;
     overflow: hidden;
@@ -666,4 +667,5 @@ footer .logo{
     color: #333333;
     line-height: 16px;
     margin: 5px 0 0;
+    font-weight: 300;
 }
