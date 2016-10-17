@@ -455,6 +455,7 @@ footer .logo{
 .dashboard {
     background: #F7F7F7;
 }
+/* LEFT NAV-------------------------------------------------------------------------- */
 .left-nav {
     height:100vh;   /* 100/100 vertical height */
     width: 14.6666667%;
@@ -499,6 +500,16 @@ footer .logo{
     width:16px;
     text-align: center;
     margin-right: 8px;
+}
+.left-nav .active {
+    background: #8BBDE5;
+    margin-left:-7%;
+    margin-right: -7%;
+    margin-top: -3%;
+    margin-bottom: -3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 7%;
 }
 /* LEFT NAVBAR SETTINGS -------------------------------------------------------------- */
 .left-nav .settings {
