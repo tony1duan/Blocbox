@@ -637,12 +637,13 @@ footer .logo{
 
 /* ITEMS FORMATING ------------------------------------------------------------------- */
 .item-box > img {
-    position: absolute;
+    position:absolute;
     height: 100%;
     width: auto;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 50%; /* move the image to the left by 20% of the width of the container */
+    /* right: 0; /don't need this anymore */
+    transform: translate(-50%); /* move the image to the left by 50% of the width of of itsself */
 }
 .item-box h2 {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
