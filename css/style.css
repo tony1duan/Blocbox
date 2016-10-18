@@ -457,16 +457,52 @@ footer .logo{
 }
 /* LEFT NAV-------------------------------------------------------------------------- */
 .left-nav {
-    height:100vh;   /* 100/100 vertical height */
-    width: 14.6666667%;
-    color: #FFFFFF;
+    /* height:100vh;    100/100 vertical height */
+    height: 100%;
+    /* width: 14.6666667%; */
+    width: 280px;
+    /* color: #FFFFFF;
     background: #6EA6D4;
-    background-image: linear-gradient (-135deg, #6EA6D4 0%, #9ECFF5 100%);
+    background-image: linear-gradient(-135deg, #6EA6D4 0%, #9ECFF5 100%);
     box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.50);
     float: left;
-    position: fixed;
-    display: block;
+    position: fixed; */
+    position: absolute;
+    /* display: block; */
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-280px,0);
+    -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+    -o-transform: translate(-280px,0); /** Opera **/
+    -moz-transform: translate(-280px,0); /** Firefox **/
 }
+.left-nav.open {
+    display:block;
+    width:280px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translate(0,0);
+        -webkit-transform: translate(0,0); /** Chrome & Safari **/
+        -o-transform: translate(0,0); /** Opera **/
+        -moz-transform: translate(0,0); /** Firefox **/
+        z-index: 100;
+ }
+.hamburger {
+    position:absolute;
+    z-index: 1000;
+    background:#34495E;
+    color:#FFF;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    left: 5px;
+    top: 15px;
+ }
 .left-nav .site-logo {
     padding: 10px 0;
     background: #2880BF;
@@ -511,6 +547,36 @@ footer .logo{
     padding-bottom: 3%;
     padding-left: 7%;
 }
+/* LEFT NAVBAR MEDIA QUERIES -------------------------------------------------------------- */
+@media *min-width:992px) {
+    .left-nav {
+        height:100vh;    /* 100/100 vertical height */
+        width: 14.6666667%;
+        color: #FFFFFF;
+        background: #6EA6D4;
+        background-image: linear-gradient(-135deg, #6EA6D4 0%, #9ECFF5 100%);
+        box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.50);
+        float: left;
+        position: fixed; 
+        display: block;
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0); /** Chrome & Safari **/
+        -o-transform: translate(0,0); /** Opera **/
+        -moz-transform: translate(0,0); /** Firefox **/
+    }
+    .left-nav.open {
+        width:14.66666667%;
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0); /** Chrome & Safari **/
+        -o-transform: translate(0,0); /** Opera **/
+        -moz-transform: translate(0,0); /** Firefox **/
+    }
+    .hamburger {
+        display: none;
+    }    
+   
+}
+    
 /* LEFT NAVBAR SETTINGS -------------------------------------------------------------- */
 .left-nav .settings {
     position: absolute;
@@ -641,7 +707,7 @@ footer .logo{
     height: 100%;
     width: auto;
     top: 0;
-    left: 50%; /* move the image to the left by 20% of the width of the container */
+    left: 50%; /* move the image to the left by 50% of the width of the container */
     /* right: 0; /don't need this anymore */
     transform: translate(-50%); /* move the image to the left by 50% of the width of of itsself */
 }
