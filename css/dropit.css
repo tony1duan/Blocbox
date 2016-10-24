@@ -8,6 +8,23 @@
  */
 
 /* These styles assume you are using ul and li */
+
+/* Classes have been added as below. Note that ".dropit-open" only exists when submenu is open.
+
+<ul class="dropit">
+    <li class="dropit-trigger dropit-open">
+        <a href="#">Dropdown</a>
+        <ul class="dropit-submenu">
+            <li><a href="#">Some Action 1</a></li>
+            <li><a href="#">Some Action 2</a></li>
+            <li><a href="#">Some Action 3</a></li>
+            <li><a href="#">Some Action 4</a></li>
+        </ul>
+    </li>
+</ul>
+
+*/
+
 .dropit {
     list-style: none;
 	padding: 0;
@@ -15,7 +32,9 @@
     float:right;
     display:inline-block;
 }
+
 .dropit .dropit-trigger { position: relative; }
+
 .dropit .dropit-submenu {
     position: absolute;
     top: 100%;
@@ -27,6 +46,7 @@
 	padding: 20px;
 	margin: 20px 0 0;
 }
+
 .dropit .dropit-open .dropit-submenu { 
     display: block;
     background: #FFFFFF;
@@ -56,5 +76,44 @@
     color:#2880BF;
     text-decoration: none;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size:12px;
     font-weight:300;
  }
+
+
+/* Assignment---------------------------------------------------------------------- */
+/* Drop-down menu*/
+.menu-2.dropit .dropit-submenu {
+    position: absolute;
+    top:auto;
+    bottom: 100%;
+    transform: translate(0, -17px);
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+	padding: 20px;
+	margin: 20px 0 0;
+}
+
+/* Triangle */
+.menu-2.dropit .dropit-open .dropit-submenu:after { 
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 8px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top:auto;
+    bottom: -8px;
+    right: 10px;
+}
+
+/* To gray out "collaborator" */
+.menu-2.dropit .dropit-open .dropit-submenu li .gray_text {
+    color: #AAAAAA;
+}
+

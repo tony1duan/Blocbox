@@ -461,12 +461,12 @@ footer .logo{
     height: 100%;
     /* width: 14.6666667%; */
     width: 280px;
-    /* color: #FFFFFF;
+    color: #FFFFFF;
     background: #6EA6D4;
     background-image: linear-gradient(-135deg, #6EA6D4 0%, #9ECFF5 100%);
     box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.50);
     float: left;
-    position: fixed; */
+    /* position: fixed; */
     position: absolute;
     /* display: block; */
     -webkit-transition: all 0.3s ease-in-out;
@@ -494,7 +494,7 @@ footer .logo{
 .hamburger {
     position:absolute;
     z-index: 1000;
-    background:#34495E;
+    background:#2880BF;
     color:#FFF;
     text-decoration: none;
     font-size: 22px;
@@ -548,7 +548,7 @@ footer .logo{
     padding-left: 7%;
 }
 /* LEFT NAVBAR MEDIA QUERIES -------------------------------------------------------------- */
-@media *min-width:992px) {
+@media (min-width:992px) {
     .left-nav {
         height:100vh;    /* 100/100 vertical height */
         width: 14.6666667%;
@@ -601,13 +601,13 @@ footer .logo{
     font-weight: 600;
     margin: 0 0 0 10px;
 }
-.left-nav .settings a {
+.left-nav .settings .menu-2 li a {
     color: #FFFFFF;
     text-decoration: none;
     text-align: right;
     float: right;
     margin-right: 10px;
-    margin-top: 8px;
+    margin-top: -6px;
 }
 
 /* CONTENT --------------------------------------------------------------------------- */
@@ -717,6 +717,7 @@ footer .logo{
     font-size: 22px;
     line-height: 25px;
     margin: 0;
+    padding-top: 11px;
 }
 .item-box h2 a {
     color: #4A4A4A;
@@ -726,8 +727,10 @@ footer .logo{
     width: 23px;
     height: 23px;
     position: absolute;
-    top: 0px;
+    top: -4px;
     margin-right: 5px;
+    background: #ddd;
+    padding:6px;
 }
 .item-box p {
     font-size: 12px;
