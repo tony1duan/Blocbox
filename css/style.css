@@ -176,7 +176,7 @@ header .hero p {
     margin: 0 auto;
     padding:4em 0;
 }
-.benefits>div>div {
+.benefits>div>.one-half {
     list-style-type: none;
     display: inline-block;
 }
@@ -184,20 +184,19 @@ header .hero p {
     font-size:55px;
 
 }
-.benefits>div div> .notes {
+.benefits>div .one-half> .notes {
     position: relative;
-    left:-125px;
-    height:270px;
+    width:100%;
+    top: 20px;
+    
 }
 .benefits>div>div> .images {
     position: relative;
-    left:80px;
-    height:270px;
+    width:100%;
 }
 .benefits>div div> .links {
     position: relative;
-    left:-100px;
-    height:270px;
+    width:100%;
 }
 .benefits>div>div h2 {
     font-weight: 900;
@@ -309,6 +308,8 @@ header .hero p {
     left:15px;
     right:15px;
     text-align: center;
+    color:#2880BF;
+    font-weight: 900
 }
 .item_top2 {
     position:relative;
@@ -316,6 +317,7 @@ header .hero p {
     left:15px;
     right:15px;
     text-align: center;
+    color:#2880BF;
 
 }
 .container_full {
@@ -330,6 +332,13 @@ header .hero p {
     top:-100px;
     z-index: -1;
 }
+.testimonials blockquote {
+    font:Raleway;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3em;
+}
 .user1 {
     background-image: url(../img/testimonial_1.jpg);
     background-size: cover;
@@ -339,6 +348,7 @@ header .hero p {
     bottom: 7em;
     left:4em;
     right: -3em;
+    color: #AC27C3;
 }
 .user1>p {
     bottom: 1em;
@@ -353,6 +363,7 @@ header .hero p {
 .user2>blockquote {
     bottom: 7em;
     padding:0 .5em;
+    color: #E3453B;
 }
 .user2>p {
     bottom: 1em;
@@ -368,6 +379,7 @@ header .hero p {
     bottom: 7em;
     left:-3em;
     right: 4em;
+    color: #57990C;
 }
 .user3>p {
     bottom: 1em;
@@ -548,7 +560,7 @@ footer .logo{
     padding-left: 7%;
 }
 /* LEFT NAVBAR MEDIA QUERIES -------------------------------------------------------------- */
-@media (min-width:992px) {
+@media (min-width:1150px) {
     .left-nav {
         height:100vh;    /* 100/100 vertical height */
         width: 14.6666667%;

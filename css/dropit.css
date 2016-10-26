@@ -41,7 +41,7 @@
     right: 0; /* dropdown left or right */
     z-index: 1000;
     display: none;
-    min-width: 100px;
+    width: 130px;
     list-style: none;
 	padding: 20px;
 	margin: 20px 0 0;
@@ -76,7 +76,7 @@
     color:#2880BF;
     text-decoration: none;
     font-family: "Raleway", Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:16px;
     font-weight:300;
  }
 
@@ -91,9 +91,9 @@
     right: 0; /* dropdown left or right */
     z-index: 1000;
     display: none;
-    min-width: 100px;
+    min-width: 136px;
     list-style: none;
-	padding: 20px;
+	padding: 15px;
 	margin: 20px 0 0;
 }
 
@@ -113,7 +113,13 @@
 }
 
 /* To gray out "collaborator" */
+.menu-2.dropit .dropit-open .dropit-submenu li a {
+    margin:8px;
+}
 .menu-2.dropit .dropit-open .dropit-submenu li .gray_text {
     color: #AAAAAA;
+}
+.menu-2.dropit .dropit-open .dropit-submenu li .sign_out {
+    padding-top: 0px!important;
 }
 
